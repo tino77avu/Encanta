@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Error del servidor - Encanta Eventos Sociales">
+    <title>500 - Error del servidor | Encanta Eventos Sociales</title>
+    <link rel="icon" th:href="@{/images/logo.png}" type="image/png">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .error-container {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #FFD700 0%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+        .error-message {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+        .error-description {
+            color: #666;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ENCANTA</div>
+            <ul class="nav-menu">
+                <li><a th:href="@{/}">Inicio</a></li>
+                <li><a th:href="@{/servicios}">Servicios</a></li>
+                <li><a th:href="@{/galeria}">Galería</a></li>
+                <li><a th:href="@{/contacto}">Contáctanos</a></li>
+                <li><a th:href="@{/login}">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="error-container">
+        <div class="error-code">500</div>
+        <h1 class="error-message">Error del servidor</h1>
+        <p class="error-description">
+            Lo sentimos, ha ocurrido un error interno en el servidor. 
+            Nuestro equipo técnico ha sido notificado y está trabajando para solucionarlo.
+            Por favor, intenta nuevamente en unos momentos.
+        </p>
+        <div class="error-actions">
+            <a th:href="@{/}" class="btn">Volver al Inicio</a>
+            <a th:href="@{/contacto}" class="btn">Contáctanos</a>
+        </div>
+    </div>
+
+    <!-- WhatsApp Flotante -->
+    <a href="https://wa.me/51960171686" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Enlaces Legales</h3>
+                <ul>
+                    <li><a th:href="@{/politicas-privacidad}">Políticas de Privacidad</a></li>
+                    <li><a th:href="@{/terminos-condiciones}">Términos y Condiciones</a></li>
+                    <li><a th:href="@{/preguntas-frecuentes}">Preguntas Frecuentes</a></li>
+                    <li><a th:href="@{/derechos-arco}">Derechos ARCO</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons-container">
+                    <a href="#" class="social-icon" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Encanta Eventos Sociales. Todos los derechos reservados.</p>
+            <p>Jane Vásquez - Organizadora de Eventos</p>
+        </div>
+    </footer>
+
+    <script th:src="@{/js/main.js}"></script>
+</body>
+</html>
+
