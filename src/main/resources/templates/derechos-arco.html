@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derechos Arco - Encanta Eventos Sociales</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="/" class="logo-link">
+                <span class="logo-text">ENCANTA</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/servicios">Servicios</a></li>
+                <li><a href="/galeria">Galería</a></li>
+                <li><a href="/contacto">Contáctanos</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="container">
+        <section class="hero-legal">
+            <h1>Derechos Arco</h1>
+            <p>Ejerce tus derechos de acceso, rectificación, cancelación y oposición</p>
+        </section>
+    </div>
+
+    <!-- Contenido -->
+    <div class="container">
+        <section class="section-legal">
+            <div class="legal-content">
+                <h2>¿Qué son los Derechos ARCO?</h2>
+                <p>Los Derechos ARCO son un conjunto de derechos que tienes como titular de datos personales. ARCO es un acrónimo que representa:</p>
+                <ul>
+                    <li><strong>Acceso:</strong> Derecho a conocer qué datos personales tenemos sobre ti</li>
+                    <li><strong>Rectificación:</strong> Derecho a corregir datos inexactos o incompletos</li>
+                    <li><strong>Cancelación:</strong> Derecho a solicitar la eliminación de tus datos personales</li>
+                    <li><strong>Oposición:</strong> Derecho a oponerte al tratamiento de tus datos personales</li>
+                </ul>
+
+                <h2>¿Cómo ejercer tus Derechos ARCO?</h2>
+                <p>Para ejercer cualquiera de estos derechos, puedes contactarnos a través de los siguientes medios:</p>
+                <ul>
+                    <li><strong>Email:</strong> derechosarco@encantaeventos.com</li>
+                    <li><strong>Teléfono:</strong> +1 (234) 567-8900</li>
+                    <li><strong>Dirección:</strong> Oficina Principal, Ciudad, País</li>
+                    <li><strong>Formulario de contacto:</strong> <a href="/contacto" style="color: var(--gold-dark);">Página de Contacto</a></li>
+                </ul>
+
+                <h2>Información Requerida</h2>
+                <p>Para procesar tu solicitud, necesitamos la siguiente información:</p>
+                <ul>
+                    <li>Nombre completo</li>
+                    <li>Número de identificación</li>
+                    <li>Descripción clara del derecho que deseas ejercer</li>
+                    <li>Datos específicos que deseas acceder, rectificar, cancelar u oponerte</li>
+                    <li>Firma autógrafa o digital</li>
+                </ul>
+
+                <h2>Tiempo de Respuesta</h2>
+                <p>Nos comprometemos a responder tu solicitud en un plazo máximo de 20 días hábiles a partir de la recepción de tu solicitud completa. Si la solicitud es compleja, podemos extender el plazo hasta 40 días hábiles, notificándote previamente.</p>
+
+                <h2>Gratuidad del Servicio</h2>
+                <p>El ejercicio de los Derechos ARCO es gratuito. Sin embargo, si realizas solicitudes manifiestamente infundadas o excesivas, especialmente por su carácter repetitivo, podemos cobrar un costo razonable basado en los costos administrativos.</p>
+
+                <h2>Medios de Verificación</h2>
+                <p>Para proteger tu información personal, verificaremos tu identidad antes de procesar cualquier solicitud relacionada con tus Derechos ARCO. Esto puede incluir solicitar documentación adicional que acredite tu identidad.</p>
+
+                <h2>Derecho de Acceso</h2>
+                <p>Puedes solicitar información sobre:</p>
+                <ul>
+                    <li>Qué datos personales tenemos sobre ti</li>
+                    <li>Para qué fines utilizamos tus datos</li>
+                    <li>Con quién compartimos tu información</li>
+                    <li>El origen de tus datos personales</li>
+                </ul>
+
+                <h2>Derecho de Rectificación</h2>
+                <p>Si descubres que alguno de tus datos personales es inexacto o está incompleto, puedes solicitar su corrección. Actualizaremos tu información de manera inmediata y notificaremos a terceros cuando sea necesario.</p>
+
+                <h2>Derecho de Cancelación</h2>
+                <p>Puedes solicitar la eliminación de tus datos personales cuando:</p>
+                <ul>
+                    <li>Consideres que no son necesarios para alguna de las finalidades señaladas en el aviso de privacidad</li>
+                    <li>Haya concluido la relación contractual o de servicio</li>
+                    <li>Te opongas al tratamiento y no exista una causa legítima para continuar</li>
+                </ul>
+                <p>La cancelación dará lugar a un bloqueo, tras el cual procederemos a la supresión de los datos.</p>
+
+                <h2>Derecho de Oposición</h2>
+                <p>Puedes oponerte al tratamiento de tus datos personales cuando tengas motivos legítimos para ello. Evaluaremos tu solicitud y, si procede, dejaremos de tratar tus datos personales, salvo que debamos conservarlos por obligación legal.</p>
+
+                <h2>Revocación del Consentimiento</h2>
+                <p>En cualquier momento puedes revocar el consentimiento que nos hayas otorgado para el tratamiento de tus datos personales. Sin embargo, es importante que sepas que no en todos los casos podremos atender tu solicitud o concluir de inmediato el tratamiento, ya que es posible que por alguna obligación legal requiramos seguir tratando tus datos personales.</p>
+
+                <h2>Contacto</h2>
+                <p>Si tienes preguntas sobre tus Derechos ARCO o necesitas asistencia para ejercerlos, no dudes en contactarnos:</p>
+                <ul>
+                    <li><strong>Email:</strong> derechosarco@encantaeventos.com</li>
+                    <li><strong>Teléfono:</strong> +1 (234) 567-8900</li>
+                    <li><strong>Horario de atención:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</li>
+                </ul>
+
+                <p class="last-updated"><strong>Última actualización:</strong> Diciembre 2024</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- WhatsApp Flotante -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-legal">
+                <h3>Legales</h3>
+                <ul>
+                    <li><a href="/politicas-privacidad">Políticas de Privacidad</a></li>
+                    <li><a href="/terminos-condiciones">Términos y condiciones</a></li>
+                    <li><a href="/preguntas-frecuentes">Preguntas frecuentes</a></li>
+                    <li><a href="/derechos-arco">Derechos Arco</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos a través de:</h3>
+                <div class="social-icons-container">
+                    <a href="#" class="social-icon" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="X (Twitter)">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Encanta Eventos Sociales. Todos los derechos reservados.</p>
+            <p>Jane Vásquez - Organizadora de Eventos</p>
+        </div>
+    </footer>
+
+    <script th:src="@{/js/main.js}"></script>
+</body>
+</html>
+

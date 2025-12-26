@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Encanta Eventos Sociales</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="/" class="logo-link">
+                <span class="logo-text">ENCANTA</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/servicios">Servicios</a></li>
+                <li><a href="/galeria">Galería</a></li>
+                <li><a href="/contacto">Contáctanos</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="container">
+        <section class="hero">
+            <h1>Iniciar Sesión</h1>
+            <p>Accede a tu cuenta para gestionar tus eventos</p>
+        </section>
+    </div>
+
+    <!-- Formulario de Login -->
+    <div class="container">
+        <div class="form-container">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Acceso al Sistema</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username"><i class="fas fa-user"></i> Usuario o Email *</label>
+                    <input type="text" id="username" name="username" required placeholder="Ingrese su usuario o email">
+                </div>
+                <div class="form-group">
+                    <label for="password"><i class="fas fa-lock"></i> Contraseña *</label>
+                    <input type="password" id="password" name="password" required placeholder="Ingrese su contraseña">
+                </div>
+                <div class="form-group" style="display: flex; justify-content: space-between; align-items: center;">
+                    <label style="margin: 0;">
+                        <input type="checkbox" name="remember" style="width: auto; margin-right: 0.5rem;">
+                        Recordarme
+                    </label>
+                    <a href="#" style="color: var(--gold-dark); text-decoration: none;">¿Olvidaste tu contraseña?</a>
+                </div>
+                <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">Iniciar Sesión</button>
+            </form>
+            <div style="text-align: center; margin-top: 2rem;">
+                <p>¿No tienes una cuenta? <a href="/contacto" style="color: var(--gold-dark); text-decoration: none; font-weight: bold;">Contáctanos</a></p>
+            </div>
+        </div>
+
+        <!-- Información adicional -->
+        <section class="section" style="margin-top: 2rem;">
+            <h2>Área de Clientes</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3><i class="fas fa-calendar-check"></i> Gestiona tus Eventos</h3>
+                    <p>Accede a la información de tus eventos, fechas, detalles y estado de planificación.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-file-invoice"></i> Documentos y Facturas</h3>
+                    <p>Consulta y descarga tus facturas, contratos y documentos relacionados con tus eventos.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-comments"></i> Comunicación Directa</h3>
+                    <p>Mantente en contacto con nuestro equipo a través del sistema de mensajería.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- WhatsApp Flotante -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-legal">
+                <h3>Legales</h3>
+                <ul>
+                    <li><a href="/politicas-privacidad">Políticas de Privacidad</a></li>
+                    <li><a href="/terminos-condiciones">Términos y condiciones</a></li>
+                    <li><a href="/preguntas-frecuentes">Preguntas frecuentes</a></li>
+                    <li><a href="/derechos-arco">Derechos Arco</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos a través de:</h3>
+                <div class="social-icons-container">
+                    <a href="#" class="social-icon" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="X (Twitter)">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Encanta Eventos Sociales. Todos los derechos reservados.</p>
+            <p>Jane Vásquez - Organizadora de Eventos</p>
+        </div>
+    </footer>
+
+    <script th:src="@{/js/main.js}"></script>
+</body>
+</html>
+

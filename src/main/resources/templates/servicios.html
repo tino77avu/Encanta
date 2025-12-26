@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Encanta Eventos Sociales</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="/" class="logo-link">
+                <span class="logo-text">ENCANTA</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/servicios">Servicios</a></li>
+                <li><a href="/galeria">Galería</a></li>
+                <li><a href="/contacto">Contáctanos</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="container">
+        <section class="hero">
+            <h1>Nuestros Servicios</h1>
+            <p>Soluciones completas para hacer realidad tu evento perfecto</p>
+        </section>
+    </div>
+
+    <!-- Servicios Sociales -->
+    <div class="container">
+        <section class="section">
+            <h2>Eventos Sociales</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3><i class="fas fa-ring"></i> Bodas</h3>
+                    <p>Planificación completa de bodas: desde la ceremonia hasta la recepción. Incluye decoración, catering, música, fotografía y coordinación del día del evento.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-birthday-cake"></i> Quinceañeras</h3>
+                    <p>Celebración inolvidable de tus quince años con decoración temática, entretenimiento, catering y todos los detalles que harán de tu fiesta un momento único.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-baby"></i> Bautizos</h3>
+                    <p>Eventos íntimos y elegantes para celebrar el bautizo de tu pequeño. Decoración delicada y servicio de catering especializado.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-gift"></i> Cumpleaños</h3>
+                    <p>Fiestas de cumpleaños personalizadas para todas las edades. Desde fiestas infantiles hasta celebraciones de adultos mayores.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-graduation-cap"></i> Graduaciones</h3>
+                    <p>Celebra el logro académico con eventos elegantes que incluyen decoración, catering y entretenimiento apropiado.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-glass-cheers"></i> Aniversarios</h3>
+                    <p>Renueva tus votos o celebra años de amor con eventos románticos y sofisticados diseñados especialmente para parejas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios Corporativos -->
+        <section class="section">
+            <h2>Eventos Corporativos</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3><i class="fas fa-chalkboard-teacher"></i> Conferencias y Seminarios</h3>
+                    <p>Organización completa de eventos educativos y profesionales: logística, equipos audiovisuales, catering y servicios de networking.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-rocket"></i> Lanzamientos de Productos</h3>
+                    <p>Eventos impactantes para presentar nuevos productos o servicios. Incluye diseño de espacio, tecnología y estrategias de marketing.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-handshake"></i> Reuniones Corporativas</h3>
+                    <p>Espacios profesionales para reuniones de trabajo, juntas directivas y encuentros empresariales con todos los servicios necesarios.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-trophy"></i> Celebración de Logros</h3>
+                    <p>Reconocimiento a empleados y celebración de metas alcanzadas con eventos motivacionales y festivos.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-network-wired"></i> Networking</h3>
+                    <p>Eventos diseñados para conectar profesionales, incluyendo espacios de interacción y actividades de networking.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-calendar-check"></i> Convenciones</h3>
+                    <p>Gestión completa de convenciones empresariales de gran escala con múltiples sesiones, expositores y participantes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios Adicionales -->
+        <section class="section">
+            <h2>Servicios Adicionales</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3><i class="fas fa-paint-brush"></i> Decoración</h3>
+                    <p>Diseño y decoración personalizada según el tema y estilo de tu evento. Desde elegante y sofisticado hasta moderno y colorido.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-utensils"></i> Catering</h3>
+                    <p>Servicio de comida y bebida de alta calidad. Menús personalizados para todos los gustos y necesidades dietéticas.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-music"></i> Entretenimiento</h3>
+                    <p>DJs, bandas en vivo, grupos musicales y otros servicios de entretenimiento para hacer tu evento inolvidable.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-camera"></i> Fotografía y Video</h3>
+                    <p>Servicios profesionales de fotografía y videografía para capturar todos los momentos especiales de tu evento.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-map-marked-alt"></i> Gestión de Locaciones</h3>
+                    <p>Asesoría y gestión de espacios para eventos. Te ayudamos a encontrar el lugar perfecto para tu celebración.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-tasks"></i> Coordinación Completa</h3>
+                    <p>Gestión integral del evento desde la planificación inicial hasta la ejecución final, asegurando que todo salga perfecto.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- WhatsApp Flotante -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-legal">
+                <h3>Legales</h3>
+                <ul>
+                    <li><a href="/politicas-privacidad">Políticas de Privacidad</a></li>
+                    <li><a href="/terminos-condiciones">Términos y condiciones</a></li>
+                    <li><a href="/preguntas-frecuentes">Preguntas frecuentes</a></li>
+                    <li><a href="/derechos-arco">Derechos Arco</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos a través de:</h3>
+                <div class="social-icons-container">
+                    <a href="#" class="social-icon" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="X (Twitter)">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Encanta Eventos Sociales. Todos los derechos reservados.</p>
+            <p>Jane Vásquez - Organizadora de Eventos</p>
+        </div>
+    </footer>
+
+    <script th:src="@{/js/main.js}"></script>
+</body>
+</html>
+

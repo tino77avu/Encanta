@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos - Encanta Eventos Sociales</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="/" class="logo-link">
+                <span class="logo-text">ENCANTA</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/servicios">Servicios</a></li>
+                <li><a href="/galeria">Galería</a></li>
+                <li><a href="/contacto">Contáctanos</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="container">
+        <section class="hero">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para hacer realidad tu evento perfecto</p>
+        </section>
+    </div>
+
+    <!-- Formulario de Contacto -->
+    <div class="container">
+        <div class="form-container">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Envíanos un Mensaje</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nombre"><i class="fas fa-user"></i> Nombre Completo *</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Correo Electrónico *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono"><i class="fas fa-phone"></i> Teléfono *</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipoEvento"><i class="fas fa-calendar"></i> Tipo de Evento *</label>
+                    <select id="tipoEvento" name="tipoEvento" required>
+                        <option value="">Seleccione un tipo de evento</option>
+                        <option value="social">Evento Social</option>
+                        <option value="corporativo">Evento Corporativo</option>
+                        <option value="boda">Boda</option>
+                        <option value="quinceanera">Quinceañera</option>
+                        <option value="cumpleanos">Cumpleaños</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fechaEvento"><i class="fas fa-calendar-alt"></i> Fecha del Evento</label>
+                    <input type="date" id="fechaEvento" name="fechaEvento">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje"><i class="fas fa-comment"></i> Mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos sobre tu evento..."></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Enviar Mensaje</button>
+            </form>
+        </div>
+
+        <!-- Información de Contacto -->
+        <section class="section" style="margin-top: 2rem;">
+            <h2>Información de Contacto</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3><i class="fas fa-phone"></i> Teléfono</h3>
+                    <p>+1 (234) 567-8900</p>
+                    <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-envelope"></i> Email</h3>
+                    <p>info@encantaeventos.com</p>
+                    <p>contacto@encantaeventos.com</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-map-marker-alt"></i> Ubicación</h3>
+                    <p>Oficina Principal</p>
+                    <p>Ciudad, País</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fab fa-whatsapp"></i> WhatsApp</h3>
+                    <p>+1 (234) 567-8900</p>
+                    <p>Disponible 24/7</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Redes Sociales -->
+        <section class="section">
+            <h2>Síguenos en Redes Sociales</h2>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="#" class="btn" style="margin: 0.5rem;"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#" class="btn" style="margin: 0.5rem;"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#" class="btn" style="margin: 0.5rem;"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#" class="btn" style="margin: 0.5rem;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- WhatsApp Flotante -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-legal">
+                <h3>Legales</h3>
+                <ul>
+                    <li><a href="/politicas-privacidad">Políticas de Privacidad</a></li>
+                    <li><a href="/terminos-condiciones">Términos y condiciones</a></li>
+                    <li><a href="/preguntas-frecuentes">Preguntas frecuentes</a></li>
+                    <li><a href="/derechos-arco">Derechos Arco</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos a través de:</h3>
+                <div class="social-icons-container">
+                    <a href="#" class="social-icon" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="X (Twitter)">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Encanta Eventos Sociales. Todos los derechos reservados.</p>
+            <p>Jane Vásquez - Organizadora de Eventos</p>
+        </div>
+    </footer>
+
+    <script th:src="@{/js/main.js}"></script>
+</body>
+</html>
+
