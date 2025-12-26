@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: encanta-eventos
+    env: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: production
+    healthCheckPath: /
+
