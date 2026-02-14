@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +7,15 @@
     <meta name="keywords" content="galería eventos, fotos eventos, eventos Lima, bodas, quinceañeras">
     <meta name="author" content="Encanta Eventos Sociales">
     <title>Galería - Encanta Eventos Sociales</title>
-    <link rel="icon" th:href="@{/images/logo.png}" type="image/png">
-    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="icon" href="/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <nav>
-            <a href="/" class="logo-link">
-                <span class="logo-text">ENCANTA</span>
-            </a>
-            <button class="menu-toggle" id="menuToggle">
-                <i class="fas fa-bars"></i>
-            </button>
+            <a href="/" class="logo-link"><span class="logo-text">ENCANTA</span></a>
+            <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="/">Inicio</a></li>
                 <li><a href="/servicios">Servicios</a></li>
@@ -31,7 +26,6 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <div class="container">
         <section class="hero-legal">
             <h1>Galería de Eventos</h1>
@@ -39,102 +33,101 @@
         </section>
     </div>
 
-    <!-- Galería de Imágenes -->
     <div class="container">
         <section class="section">
             <div class="gallery">
                 <div class="gallery-item">
-                    <img th:src="@{/images/galeria1.jpg}" alt="Evento 1" class="gallery-image">
+                    <img src="/images/galeria1.jpg" alt="Evento 1" class="gallery-image">
                     <div class="gallery-overlay">
                         <p class="gallery-comment">"Cada detalle cuenta cuando se trata de hacer realidad tus sueños. Este momento quedará grabado para siempre en tu corazón."</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img th:src="@{/images/galeria2.jpg}" alt="Evento 2" class="gallery-image">
+                    <img src="/images/galeria2.jpg" alt="Evento 2" class="gallery-image">
                     <div class="gallery-overlay">
                         <p class="gallery-comment">"La emoción de ver tu visión cobrar vida es indescriptible. Cada sonrisa, cada lágrima de felicidad, valen cada esfuerzo."</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img th:src="@{/images/galeria3.jpg}" alt="Evento 3" class="gallery-image">
+                    <img src="/images/galeria3.jpg" alt="Evento 3" class="gallery-image">
                     <div class="gallery-overlay">
                         <p class="gallery-comment">"Imagina despertar el día de tu evento y ver todo perfecto, exactamente como lo soñaste. Eso es lo que hacemos realidad."</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img th:src="@{/images/galeria4.jpg}" alt="Evento 4" class="gallery-image">
+                    <img src="/images/galeria4.jpg" alt="Evento 4" class="gallery-image">
                     <div class="gallery-overlay">
                         <p class="gallery-comment">"Los momentos más importantes de tu vida merecen ser perfectos. Nosotros nos encargamos de que así sea, para que tú solo disfrutes."</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img th:src="@{/images/galeria5.jpg}" alt="Evento 5" class="gallery-image">
+                    <img src="/images/galeria5.jpg" alt="Evento 5" class="gallery-image">
                     <div class="gallery-overlay">
                         <p class="gallery-comment">"Cada evento es único porque cada persona es única. Creamos experiencias personalizadas que reflejan tu esencia."</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img th:src="@{/images/galeria6.jpg}" alt="Evento 6" class="gallery-image">
+                    <img src="/images/galeria6.jpg" alt="Evento 6" class="gallery-image">
                     <div class="gallery-overlay">
                         <p class="gallery-comment">"La magia está en los detalles que nadie nota pero todos sienten. Ese toque especial que hace la diferencia."</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img th:src="@{/images/galeria7.jpg}" alt="Evento 7" class="gallery-image">
+                    <img src="/images/galeria7.jpg" alt="Evento 7" class="gallery-image">
                     <div class="gallery-overlay">
                         <p class="gallery-comment">"Tu felicidad es nuestra prioridad. Ver la sonrisa en tu rostro cuando todo sale perfecto es nuestra mayor recompensa."</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img th:src="@{/images/galeria8.jpg}" alt="Evento 8" class="gallery-image">
+                    <img src="/images/galeria8.jpg" alt="Evento 8" class="gallery-image">
                     <div class="gallery-overlay">
                         <p class="gallery-comment">"No solo organizamos eventos, creamos recuerdos que durarán toda la vida. Momentos que querrás revivir una y otra vez."</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img th:src="@{/images/galeria9.jpg}" alt="Evento 9" class="gallery-image">
+                    <img src="/images/galeria9.jpg" alt="Evento 9" class="gallery-image">
                     <div class="gallery-overlay">
                         <p class="gallery-comment">"La elegancia y la sofisticación se encuentran en cada rincón. Transformamos espacios en experiencias inolvidables."</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img th:src="@{/images/galeria10.jpg}" alt="Evento 10" class="gallery-image">
+                    <img src="/images/galeria10.jpg" alt="Evento 10" class="gallery-image">
                     <div class="gallery-overlay">
                         <p class="gallery-comment">"Este podría ser tu momento. El día que todo cambió, el día que todo fue perfecto. ¿Listo para vivirlo?"</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img th:src="@{/images/galeria11.jpg}" alt="Evento 11" class="gallery-image">
+                    <img src="/images/galeria11.jpg" alt="Evento 11" class="gallery-image">
                     <div class="gallery-overlay">
                         <p class="gallery-comment">"Cuando los sueños se encuentran con la realidad, la magia sucede. Nosotros hacemos que esa magia sea posible para ti."</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img th:src="@{/images/galeria12.jpg}" alt="Evento 12" class="gallery-image">
+                    <img src="/images/galeria12.jpg" alt="Evento 12" class="gallery-image">
                     <div class="gallery-overlay">
                         <p class="gallery-comment">"Cada celebración es una historia única esperando ser contada. Nosotros escribimos los capítulos más hermosos de tu vida."</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img th:src="@{/images/galeria13.jpg}" alt="Evento 13" class="gallery-image">
+                    <img src="/images/galeria13.jpg" alt="Evento 13" class="gallery-image">
                     <div class="gallery-overlay">
                         <p class="gallery-comment">"La perfección no es un accidente, es el resultado de la pasión, dedicación y atención a cada detalle que importa."</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img th:src="@{/images/galeria14.jpg}" alt="Evento 14" class="gallery-image">
+                    <img src="/images/galeria14.jpg" alt="Evento 14" class="gallery-image">
                     <div class="gallery-overlay">
                         <p class="gallery-comment">"Imagina el momento en que todos se quedan sin palabras, solo admirando la belleza de lo que hemos creado juntos."</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img th:src="@{/images/galeria15.jpg}" alt="Evento 15" class="gallery-image">
+                    <img src="/images/galeria15.jpg" alt="Evento 15" class="gallery-image">
                     <div class="gallery-overlay">
                         <p class="gallery-comment">"Tu evento no es solo una fecha en el calendario, es el día en que tus recuerdos más preciados comienzan a escribirse."</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img th:src="@{/images/galeria16.jpg}" alt="Evento 16" class="gallery-image">
+                    <img src="/images/galeria16.jpg" alt="Evento 16" class="gallery-image">
                     <div class="gallery-overlay">
                         <p class="gallery-comment">"Detrás de cada sonrisa hay horas de trabajo, cada lágrima de felicidad vale cada esfuerzo. Tu satisfacción es nuestro éxito."</p>
                     </div>
@@ -143,12 +136,8 @@
         </section>
     </div>
 
-    <!-- WhatsApp Flotante -->
-    <a href="https://wa.me/51960171686" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <a href="https://wa.me/51960171686" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-legal">
@@ -163,18 +152,10 @@
             <div class="footer-social">
                 <h3>Síguenos a través de:</h3>
                 <div class="social-icons-container">
-                    <a href="#" class="social-icon" target="_blank" aria-label="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="social-icon" target="_blank" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="social-icon" target="_blank" aria-label="X (Twitter)">
-                        <i class="fab fa-x-twitter"></i>
-                    </a>
-                    <a href="#" class="social-icon" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
@@ -183,8 +164,6 @@
             <p>Jane Vásquez - Organizadora de Eventos</p>
         </div>
     </footer>
-
-    <script th:src="@{/js/main.js}"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
-

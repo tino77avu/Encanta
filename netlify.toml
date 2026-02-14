@@ -1,0 +1,46 @@
+# Configuración para desplegar la versión estática en Netlify
+# La app Spring Boot sigue en Render; esta carpeta es solo HTML/CSS/JS estático.
+
+[build]
+  publish = "netlify-public"
+  command = "mkdir -p netlify-public/css netlify-public/js netlify-public/images && cp -r src/main/resources/static/css/. netlify-public/css/ 2>/dev/null || true && cp -r src/main/resources/static/js/. netlify-public/js/ 2>/dev/null || true && cp -r src/main/resources/static/images/. netlify-public/images/ 2>/dev/null || true"
+
+# Redirecciones para URLs sin .html (/servicios -> /servicios.html)
+[[redirects]]
+  from = "/servicios"
+  to = "/servicios.html"
+  status = 200
+[[redirects]]
+  from = "/contacto"
+  to = "/contacto.html"
+  status = 200
+[[redirects]]
+  from = "/galeria"
+  to = "/galeria.html"
+  status = 200
+[[redirects]]
+  from = "/login"
+  to = "/login.html"
+  status = 200
+[[redirects]]
+  from = "/politicas-privacidad"
+  to = "/politicas-privacidad.html"
+  status = 200
+[[redirects]]
+  from = "/terminos-condiciones"
+  to = "/terminos-condiciones.html"
+  status = 200
+[[redirects]]
+  from = "/preguntas-frecuentes"
+  to = "/preguntas-frecuentes.html"
+  status = 200
+[[redirects]]
+  from = "/derechos-arco"
+  to = "/derechos-arco.html"
+  status = 200
+
+# 404 para SPA/estático (opcional)
+# [[redirects]]
+#   from = "/*"
+#   to = "/404.html"
+#   status = 404

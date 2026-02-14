@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +7,15 @@
     <meta name="keywords" content="preguntas frecuentes, FAQ, dudas eventos, información eventos">
     <meta name="author" content="Encanta Eventos Sociales">
     <title>Preguntas Frecuentes - Encanta Eventos Sociales</title>
-    <link rel="icon" th:href="@{/images/logo.png}" type="image/png">
-    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="icon" href="/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <nav>
-            <a href="/" class="logo-link">
-                <span class="logo-text">ENCANTA</span>
-            </a>
-            <button class="menu-toggle" id="menuToggle">
-                <i class="fas fa-bars"></i>
-            </button>
+            <a href="/" class="logo-link"><span class="logo-text">ENCANTA</span></a>
+            <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="/">Inicio</a></li>
                 <li><a href="/servicios">Servicios</a></li>
@@ -31,7 +26,6 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <div class="container">
         <section class="hero-legal">
             <h1>Preguntas Frecuentes</h1>
@@ -39,7 +33,6 @@
         </section>
     </div>
 
-    <!-- Contenido -->
     <div class="container">
         <section class="section-legal">
             <div class="faq-content">
@@ -47,72 +40,58 @@
                     <h2><i class="fas fa-question-circle"></i> ¿Con cuánta anticipación debo contratar sus servicios?</h2>
                     <p>Recomendamos contratar nuestros servicios con al menos 3-6 meses de anticipación para eventos grandes (bodas, quinceañeras), y 1-2 meses para eventos más pequeños. Sin embargo, podemos trabajar con plazos más cortos según la disponibilidad.</p>
                 </div>
-
                 <div class="faq-item">
                     <h2><i class="fas fa-question-circle"></i> ¿Qué incluye el servicio de planificación de eventos?</h2>
                     <p>Nuestro servicio completo incluye: consultoría inicial, diseño y conceptualización, selección y coordinación de proveedores, gestión de presupuesto, coordinación del día del evento, y seguimiento post-evento. Los servicios específicos se detallan en cada contrato.</p>
                 </div>
-
                 <div class="faq-item">
                     <h2><i class="fas fa-question-circle"></i> ¿Cómo se determina el costo de los servicios?</h2>
                     <p>El costo depende de varios factores: tipo de evento, número de invitados, servicios requeridos, complejidad del diseño, y ubicación. Ofrecemos una consulta inicial gratuita donde evaluamos tus necesidades y proporcionamos una cotización detallada.</p>
                 </div>
-
                 <div class="faq-item">
                     <h2><i class="fas fa-question-circle"></i> ¿Trabajan con proveedores externos?</h2>
                     <p>Sí, trabajamos con una red confiable de proveedores especializados en catering, fotografía, música, decoración, transporte y más. Todos nuestros proveedores son cuidadosamente seleccionados y evaluados para garantizar calidad y profesionalismo.</p>
                 </div>
-
                 <div class="faq-item">
                     <h2><i class="fas fa-question-circle"></i> ¿Qué pasa si necesito hacer cambios después de firmar el contrato?</h2>
                     <p>Entendemos que los planes pueden cambiar. Los cambios menores generalmente no tienen costo adicional. Para cambios significativos, evaluamos el impacto y proporcionamos una cotización actualizada. Los cambios con menos de 7 días de anticipación pueden tener cargos adicionales.</p>
                 </div>
-
                 <div class="faq-item">
                     <h2><i class="fas fa-question-circle"></i> ¿Ofrecen servicios para eventos corporativos?</h2>
                     <p>Absolutamente. Organizamos conferencias, lanzamientos de productos, reuniones corporativas, eventos de networking, y celebraciones empresariales. Adaptamos nuestros servicios a las necesidades profesionales y de marca de tu empresa.</p>
                 </div>
-
                 <div class="faq-item">
                     <h2><i class="fas fa-question-circle"></i> ¿Puedo elegir mis propios proveedores?</h2>
                     <p>Sí, puedes sugerir proveedores. Sin embargo, recomendamos trabajar con nuestra red de proveedores probados para garantizar calidad y coordinación. Si prefieres usar tus propios proveedores, podemos coordinarlos siempre que cumplan con nuestros estándares de calidad.</p>
                 </div>
-
                 <div class="faq-item">
                     <h2><i class="fas fa-question-circle"></i> ¿Qué métodos de pago aceptan?</h2>
                     <p>Aceptamos transferencias bancarias, cheques, efectivo y tarjetas de crédito/débito. Los términos de pago se establecen en el contrato, típicamente con un depósito inicial y el saldo antes o el día del evento.</p>
                 </div>
-
                 <div class="faq-item">
                     <h2><i class="fas fa-question-circle"></i> ¿Qué sucede si necesito cancelar mi evento?</h2>
                     <p>Nuestra política de cancelación depende del tiempo de anticipación. Con más de 30 días, reembolsamos el 50% del depósito. Con 15-30 días, el 25%. Con menos de 15 días, el depósito no es reembolsable. Los gastos ya incurridos no son reembolsables.</p>
                 </div>
-
                 <div class="faq-item">
                     <h2><i class="fas fa-question-circle"></i> ¿Están disponibles el día del evento?</h2>
                     <p>Sí, nuestro equipo estará presente durante todo el evento para asegurar que todo se desarrolle según lo planeado. Coordinamos todos los aspectos y resolvemos cualquier imprevisto que pueda surgir.</p>
                 </div>
-
                 <div class="faq-item">
                     <h2><i class="fas fa-question-circle"></i> ¿Ofrecen servicios de diseño y decoración?</h2>
                     <p>Sí, ofrecemos servicios completos de diseño y decoración. Creamos conceptos personalizados que reflejan tu estilo y visión, y nos encargamos de toda la implementación decorativa del evento.</p>
                 </div>
-
                 <div class="faq-item">
                     <h2><i class="fas fa-question-circle"></i> ¿Trabajan en eventos fuera de la ciudad?</h2>
                     <p>Sí, organizamos eventos en diferentes ubicaciones. Los eventos fuera de la ciudad pueden tener costos adicionales de transporte y alojamiento, que se incluyen en la cotización.</p>
                 </div>
-
                 <div class="faq-item">
                     <h2><i class="fas fa-question-circle"></i> ¿Cómo puedo solicitar una cotización?</h2>
                     <p>Puedes solicitar una cotización completando nuestro formulario de contacto en la página web, llamándonos directamente, o enviándonos un mensaje por WhatsApp. Programaremos una consulta inicial gratuita para discutir tus necesidades.</p>
                 </div>
-
                 <div class="faq-item">
                     <h2><i class="fas fa-question-circle"></i> ¿Qué los diferencia de otros organizadores de eventos?</h2>
                     <p>Nos destacamos por nuestra atención personalizada, años de experiencia, red confiable de proveedores, y compromiso con la excelencia. Cada evento es único para nosotros, y trabajamos incansablemente para superar las expectativas de nuestros clientes.</p>
                 </div>
-
                 <div class="faq-item">
                     <h2><i class="fas fa-question-circle"></i> ¿Ofrecen servicios post-evento?</h2>
                     <p>Sí, ofrecemos servicios post-evento como recopilación de fotografías, gestión de agradecimientos, y evaluación del evento. También mantenemos comunicación para asegurar tu satisfacción completa.</p>
@@ -127,12 +106,8 @@
         </section>
     </div>
 
-    <!-- WhatsApp Flotante -->
-    <a href="https://wa.me/51960171686" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <a href="https://wa.me/51960171686" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-legal">
@@ -147,18 +122,10 @@
             <div class="footer-social">
                 <h3>Síguenos a través de:</h3>
                 <div class="social-icons-container">
-                    <a href="#" class="social-icon" target="_blank" aria-label="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="social-icon" target="_blank" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="social-icon" target="_blank" aria-label="X (Twitter)">
-                        <i class="fab fa-x-twitter"></i>
-                    </a>
-                    <a href="#" class="social-icon" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
@@ -167,8 +134,6 @@
             <p>Jane Vásquez - Organizadora de Eventos</p>
         </div>
     </footer>
-
-    <script th:src="@{/js/main.js}"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
-

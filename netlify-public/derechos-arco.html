@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +7,15 @@
     <meta name="keywords" content="derechos ARCO, protección datos, derechos datos personales">
     <meta name="author" content="Encanta Eventos Sociales">
     <title>Derechos Arco - Encanta Eventos Sociales</title>
-    <link rel="icon" th:href="@{/images/logo.png}" type="image/png">
-    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="icon" href="/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <nav>
-            <a href="/" class="logo-link">
-                <span class="logo-text">ENCANTA</span>
-            </a>
-            <button class="menu-toggle" id="menuToggle">
-                <i class="fas fa-bars"></i>
-            </button>
+            <a href="/" class="logo-link"><span class="logo-text">ENCANTA</span></a>
+            <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="/">Inicio</a></li>
                 <li><a href="/servicios">Servicios</a></li>
@@ -31,7 +26,6 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <div class="container">
         <section class="hero-legal">
             <h1>Derechos Arco</h1>
@@ -39,7 +33,6 @@
         </section>
     </div>
 
-    <!-- Contenido -->
     <div class="container">
         <section class="section-legal">
             <div class="legal-content">
@@ -121,12 +114,8 @@
         </section>
     </div>
 
-    <!-- WhatsApp Flotante -->
-    <a href="https://wa.me/51960171686" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <a href="https://wa.me/51960171686" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-legal">
@@ -141,18 +130,10 @@
             <div class="footer-social">
                 <h3>Síguenos a través de:</h3>
                 <div class="social-icons-container">
-                    <a href="#" class="social-icon" target="_blank" aria-label="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="social-icon" target="_blank" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="social-icon" target="_blank" aria-label="X (Twitter)">
-                        <i class="fab fa-x-twitter"></i>
-                    </a>
-                    <a href="#" class="social-icon" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="social-icon" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
@@ -161,8 +142,6 @@
             <p>Jane Vásquez - Organizadora de Eventos</p>
         </div>
     </footer>
-
-    <script th:src="@{/js/main.js}"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
-
